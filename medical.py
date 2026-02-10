@@ -11,7 +11,7 @@ from agno.models.google import Gemini
 from agno.tools.duckduckgo import DuckDuckGoTools
 from agno.media import Image as AgnoImage
 # Set your API Key
-GOOGLE_API_KEY = "AIzaSyAEVjjK4nY9kldGd5BrLxqaR6OEOqX2GSA"
+GOOGLE_API_KEY = "Please set your Google API Key"
 os.environ["GOOGLE_API_KEY"] = GOOGLE_API_KEY
 #Ensure API key is provided
 if not GOOGLE_API_KEY:
@@ -192,3 +192,4 @@ elif text_report or uploaded_report_file:
 #Prompt user to provide input if nothing is uploaded or pasted
 else:
     st.warning("⚠️ Please upload a medical image or paste/upload a report to begin analysis.")
+
